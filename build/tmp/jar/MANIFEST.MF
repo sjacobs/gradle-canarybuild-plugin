@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Implementation-Title: Gradle Canary Build plugin
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: sjaco
+Built-Date: Thu Mar 26 17:37:59 UTC 2015
+Built-JDK: 1.8.0_25
+Built-Gradle: 2.2.1
+

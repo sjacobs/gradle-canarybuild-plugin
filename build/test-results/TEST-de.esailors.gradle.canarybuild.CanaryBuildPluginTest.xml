@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.esailors.gradle.canarybuild.CanaryBuildPluginTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-03-26T14:49:31" hostname="devstation16.office.tipp24.de" time="1.075">
+  <properties/>
+  <testcase name="testThatApplyingThePluginAddsTheCanaryBuildTask" classname="de.esailors.gradle.canarybuild.CanaryBuildPluginTest" time="0.881"/>
+  <testcase name="testThatCanaryBuildTaskCanBeExecuted" classname="de.esailors.gradle.canarybuild.CanaryBuildPluginTest" time="0.193"/>
+  <system-out><![CDATA[14:49:32.429 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /home/developers/sjaco/.m2/repository
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

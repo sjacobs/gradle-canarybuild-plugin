@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>de.esailors.gradle</groupId>
+  <artifactId>gradle-canarybuild-plugin</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <name>Gradle Canary Build plugin</name>
+  <description>Gradle Canary Build plugin that provides a task to create project builds with latest dependency versions.</description>
+  <inceptionYear>2015</inceptionYear>
+  <developers>
+    <developer>
+      <id>sjaco</id>
+      <name>Steffen Jacobs</name>
+      <email>steffen.jacobs@gmail.com</email>
+    </developer>
+  </developers>
+</project>
