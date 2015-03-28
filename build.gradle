@@ -41,11 +41,11 @@ dependencies {
 jar {
     manifest {
         attributes 'Implementation-Title': 'Gradle Canary Build plugin',
-                   'Implementation-Version': version,
-                   'Built-By': System.getProperty('user.name'),
-                   'Built-Date': new Date(),
-                   'Built-JDK': System.getProperty('java.version'),
-                   'Built-Gradle': gradle.gradleVersion
+                'Implementation-Version': version,
+                'Built-By': System.getProperty('user.name'),
+                'Built-Date': new Date(),
+                'Built-JDK': System.getProperty('java.version'),
+                'Built-Gradle': gradle.gradleVersion
     }
 }
 
@@ -67,3 +67,4 @@ modifyPom {
 task wrapper(type: Wrapper) {
     gradleVersion = '2.2.1'
 }
+
