@@ -16,46 +16,20 @@
 apply plugin: 'groovy'
 apply plugin: 'maven'
 apply plugin: 'nexus'
-apply plugin: 'release'
 
 group = 'de.esailors.gradle'
 
-// Specify that during a release the artifacts are automatically uploaded to Nexus
-createReleaseTag.dependsOn uploadArchives
-release.dependsOn clean
-project.ext.set("gradle.release.useAutomaticVersion", "true")
-
-project.ext {
-   gradleVersion = '1.10'
-   checkstyleConfigDir  = new File(rootDir, 'config/checkstyle')
-   ignoreTestFailures = false
-}
-// Maven release credentials are only specified in the gradle.properties file on Jenkins
-// Don't fail, if these properties are not available
-if (!project.properties.containsKey("services_os_release_user")) {
-  project.ext.services_os_release_user = "";
-  project.ext.services_os_release_password = "";
-}
-
-
 buildscript {
     repositories {
-        maven {
-            url "http://codebase.office.tipp24.de:8081/nexus/content/groups/argo-dynamic"
-        }
         jcenter()
 
     }
     dependencies {
         classpath 'org.gradle.api.plugins:gradle-nexus-plugin:+'
-	classpath 'com.github.townsfolk:gradle-release:1.2.2-esailors'
     }
 }
 
 repositories {
-    maven {
-        url "http://codebase.office.tipp24.de:8081/nexus/content/groups/argo-dynamic"
-    }
     mavenCentral()
 }
 
